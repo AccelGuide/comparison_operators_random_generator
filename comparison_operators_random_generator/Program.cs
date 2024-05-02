@@ -23,22 +23,26 @@
                 case 1:
                     result = value1 > value2;
                     Console.WriteLine($"{value1} > {value2} = {result}");
+                    // Console.WriteLine(String.Format("{0} > {1} = {2}", value1, value2, result));
+                    // Console.WriteLine(value1 + " > " + value2 + " = " + result);
                     break;
                 case 2:
-                    result = value1 >= value2;
-                    Console.WriteLine($"{value1} >= {value2} = {result}");
-                    break;
-                case 3:
-                    result = value1 == value2;
-                    Console.WriteLine($"{value1} == {value2} = {result}");
-                    break;
-                case 4:
                     result = value1 < value2;
                     Console.WriteLine($"{value1} < {value2} = {result}");
                     break;
-                case 5:
+                case 3:
                     result = value1 <= value2;
                     Console.WriteLine($"{value1} <= {value2} = {result}");
+                    break;
+                case 4:
+
+                    result = value1 >= value2;
+                    Console.WriteLine($"{value1} >= {value2} = {result}");
+                    break;
+                case 5:
+
+                    result = value1 == value2;
+                    Console.WriteLine($"{value1} == {value2} = {result}");
                     break;
                 case 6:
                     result = value1 != value2;
@@ -46,7 +50,7 @@
                     break;
             }
 
-            Console.WriteLine("Taste drücken || ESC zum Beenden");
+            Console.WriteLine("\n");
         } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
     }
 }
